@@ -11,4 +11,4 @@ steps:
      chat_id:
        from_secret: chat_id
    commands:
-      -  bash build.sh
+      - /noclone3 bash build.sh
