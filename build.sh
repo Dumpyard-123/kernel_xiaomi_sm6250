@@ -47,7 +47,7 @@ FINAL_ZIP=${ZIPNAME}-kernel-${DEVICE}-${TANGGAL}.zip
 ##----------------------------------------------------------##
 # Specify compiler.
 
-COMPILER=proton
+COMPILER=azure
 
 ##----------------------------------------------------------##
 # Specify Linker
