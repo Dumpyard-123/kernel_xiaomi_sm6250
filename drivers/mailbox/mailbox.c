@@ -108,7 +108,6 @@ static void msg_submit(struct mbox_chan *chan)
 			/* but only if not already active */
 			if (!hrtimer_active(&chan->mbox->poll_hrt))
 				hrtimer_start(&chan->mbox->poll_hrt, 0, HRTIMER_MODE_REL);
-	}
 }
 
 static void tx_tick(struct mbox_chan *chan, int r)
