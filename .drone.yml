@@ -1,14 +1,16 @@
-clone:
+---
+clone: 
   depth: 1
 kind: pipeline
-name : Forza
+type: docker
+name: linux-amd64
+
+platform:
+  arch: amd64
+  os: linux
+
 steps:
- - name: SM6250
-   image: nexgang/ubuntu:latest
-   environment:
-     token:
-       from_secret: token
-     chat_id:
-       from_secret: chat_id
-   commands:
-      - /noclone3 bash build.sh
+- name: Compiling Litten
+  image: brock5555/kernel
+  commands:
+  - bash build.sh
